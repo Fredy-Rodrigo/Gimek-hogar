@@ -1,31 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500&display=swap");
 html {
   font-size: 62.5%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
   font-weight: normal;
   font-size: 2rem;
-  line-height: 1; }
+  line-height: 1;
+}
 
 ul {
-  list-style-type: none; }
+  list-style-type: none;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
 .container {
   max-width: 120rem;
   width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
+
+header {
+  background-color: #001F56;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1100px;
+}
+header nav .logo > img {
+  width: 118px;
+}
+header nav .menu {
+  font-size: 1.5rem;
+  display: flex;
+}
+header nav .menu li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+header nav .menu li a {
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+header nav .menu-icon > img {
+  width: 30px;
+}
+
+footer {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1100px;
+  margin: 70px;
+  font-family: "Red Hat Display", sans-serif;
+  color: white;
+}
+footer .footer-container .copyright .logo > img {
+  width: 160px;
+}
+footer .footer-container .copyright p {
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+footer .footer-container .policies h4 {
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+footer .footer-container .policies p {
+  margin-top: 12px;
+}
+footer .footer-container .policies p a {
+  font-size: 1.5rem;
+  color: white;
+}
+footer .footer-container .menu-footer h4 {
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+footer .footer-container .menu-footer p {
+  margin-top: 12px;
+}
+footer .footer-container .menu-footer p a {
+  font-size: 1.5rem;
+  color: white;
+}
+footer .footer-container .follow h4 {
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+footer .footer-container .follow .message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+footer .footer-container .follow .message input {
+  width: 230px;
+  height: 36px;
+  margin-right: 8px;
+  background-color: rgba(216, 216, 216, 0.15);
+  border: none;
+}
+footer .footer-container .follow .message button {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background-color: #FF553E;
+}
+footer .footer-container .follow .message button:hover {
+  cursor: pointer;
+}
+footer .footer-container .follow .message button img {
+  width: 16px;
+}
+footer .footer-container .follow .social-media .redes {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */

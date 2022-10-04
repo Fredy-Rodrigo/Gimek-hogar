@@ -1,0 +1,86 @@
+footer {
+    background-color: #333;
+    @include flex-center;
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        max-width: 1100px;
+        margin: 70px;
+        font-family: 'Red Hat Display', sans-serif;
+        color: white;
+        .copyright {
+            .logo {
+                >img {
+                    width: 160px;
+                }
+            }
+            p {
+                font-size: 1.5rem;
+                margin-top: 15px;
+            }
+        }
+        .policies {
+            h4 {
+                font-weight: 500;
+                margin-bottom: 25px;
+            }
+            p {
+                margin-top: 12px;
+                a {
+                    font-size: 1.5rem;
+                    color: white;
+                }
+            }
+        }
+        .menu-footer {
+            h4 {
+                font-weight: 500;
+                margin-bottom: 25px;
+            }
+            p {
+                margin-top: 12px;
+                a {
+                    font-size: 1.5rem;
+                    color: white;
+                }
+            }
+        }
+        .follow {
+            h4 {
+                font-weight: 500;
+                margin-bottom: 25px;
+            }
+            .message {
+                @include flex-center;
+                margin-bottom: 25px;
+                input {
+                    width: 230px;
+                    height: 36px;
+                    margin-right: 8px;
+                    background-color: rgba(216, 216, 216, 15%);
+                    border: none;
+                }
+                button {
+                    width: 36px;
+                    height: 36px;
+                    border: none;
+                    background-color: $secondary-color;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    img {
+                        width: 16px;
+                    }
+                }
+            }
+            .social-media {
+                .redes {
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

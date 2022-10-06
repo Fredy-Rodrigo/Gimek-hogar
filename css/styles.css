@@ -203,3 +203,103 @@ footer {
         margin-top: 40px; }
     footer .footer-container .footer-box .message {
       justify-content: flex-start; } }
+
+.carousel {
+  height: 94vh;
+  background-color: #F5F9FC; }
+
+.carousel__info {
+  text-align: center; }
+  .carousel__info .carousel__title {
+    color: #001F56;
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    padding-top: 4.5rem; }
+  .carousel__info span {
+    font-weight: 700; }
+  .carousel__info p {
+    color: #6B6B6B;
+    line-height: 1.2;
+    padding-top: 2rem; }
+
+.carousel__img {
+  margin-top: 5rem; }
+
+.carousel__btn {
+  margin-top: 3rem;
+  display: inline-block;
+  background-color: #FF553E;
+  border-radius: .5rem;
+  text-align: center;
+  padding: 1.8rem 6rem;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  font-weight: 700; }
+
+@media (min-width: 768px) {
+  .carousel__info {
+    height: 94vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left; }
+  .carousel__img {
+    height: 50rem;
+    width: 50rem;
+    margin-top: 0; }
+  .carousel__info .carousel__title {
+    padding-top: 0; } }
+
+.categories {
+  margin: 8rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  gap: 3rem; }
+
+.category {
+  padding: 4rem;
+  text-align: center;
+  background-color: #F5F9FC;
+  border: 1px solid rgba(109, 187, 255, 0.3);
+  border-radius: .7rem; }
+  .category img {
+    height: 5rem;
+    width: 5rem;
+    display: inline-block; }
+  .category p {
+    text-transform: uppercase;
+    font-size: 1.6rem; }
+
+.offer__title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 2rem 0; }
+  .offer__title span {
+    font-weight: 600; }
+
+.offers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  gap: 1rem;
+  text-align: center; }
+  .offers .offer__product {
+    border: 1px solid #F4F4F4; }
+
+.offer__texts {
+  text-align: left; }
+  .offer__texts .offer__title {
+    font-weight: 500;
+    font-size: 1.8rem; }
+  .offer__texts .offer__price {
+    font-weight: 700;
+    font-size: 2rem;
+    margin: .5rem 0; }
+  .offer__texts .offer__paragraph {
+    line-height: 1.1; }
+  .offer__texts .offer__btn {
+    display: block;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #000;
+    margin: 1rem 0; }

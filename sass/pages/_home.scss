@@ -1,0 +1,25 @@
+.categories {
+  margin: 8rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  gap: 3rem;
+}
+
+.category {
+  padding: 4rem;
+  text-align: center;
+  background-color: $terciary-color;
+  border: 1px solid rgba(109, 187, 255, 0.3);
+  border-radius: .7rem;
+
+  & img {
+    height: 5rem;
+    width: 5rem;
+    display: inline-block;
+  }
+
+  & p {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+  }
+}

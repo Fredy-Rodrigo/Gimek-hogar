@@ -1,0 +1,62 @@
+.carousel {
+  height: 94vh;
+  background-color: $terciary-color;
+}
+
+.carousel__info {
+  text-align: center;
+
+  .carousel__title {
+    color: $primary-color;
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    padding-top: 4.5rem;
+  }
+
+  & span {
+    font-weight: 700;
+  }
+
+  & p {
+    color: $gray-color;
+    line-height: 1.2;
+    padding-top: 2rem;
+  }
+}
+
+.carousel__img {
+  margin-top: 5rem;
+}
+
+.carousel__btn {
+  margin-top: 3rem;
+  display: inline-block;
+  background-color: $secondary-color;
+  border-radius: .5rem;
+  text-align: center;
+  padding: 1.8rem 6rem;
+  color: $white-color;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .carousel__info {
+    height: 94vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+
+  .carousel__img {
+    height: 50rem;
+    width: 50rem;
+    margin-top: 0;
+  }
+
+  .carousel__info .carousel__title {
+    padding-top: 0;
+  }
+}

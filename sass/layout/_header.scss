@@ -16,18 +16,68 @@ header {
             font-size: 1.5rem;
             display: flex;
             li {
-                @include flex-center;
                 padding: 0 1.5rem;
                 a {
+                    height: 100%;
+                    width: 100%;
+                    @include flex-center;
+                    flex-wrap: wrap;
+                    box-sizing: content-box;
                     font-family: 'Lexend', sans-serif;
                     font-weight: 400;
                     color: white;
+                }
+                &:hover::after {
+                    content: '';
+                    display: block;
+                    width: 5px;
+                    height: 5px;
+                    margin: auto;
+                    border-radius: 50%;
+                    background-color: $secondary-color;
                 }
             }
         }
         .menu-icon {
             >img {
                 width: 30px;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    header {
+        nav {
+            .menu {
+                position: absolute;
+                top: 75px;
+                left: 0;
+                width: 100%;
+                display: block;
+                background-color: $primary-color;
+                li {
+                    height: 50px;
+                    border-top: 1px solid rgba(255, 255, 255, 0.3);
+                    &:hover::after {
+                        content: '';
+                        display: none;
+                    }
+                    &:hover, &:hover + li  {
+                        border-color: $secondary-color;
+                    }
+                    &:hover:last-child {
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+                        border-color: $secondary-color;
+                    }
+                }
+            }
+            .menu-off {
+                display: none;
             }
         }
     }

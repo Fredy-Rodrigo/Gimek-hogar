@@ -6,7 +6,7 @@ footer {
         justify-content: space-between;
         width: 90%;
         max-width: 1100px;
-        margin: 70px;
+        margin: 70px 0;
         font-family: 'Red Hat Display', sans-serif;
         color: white;
         .copyright {
@@ -80,6 +80,33 @@ footer {
                     height: 24px;
                     margin-right: 10px;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    footer {
+        .footer-container {
+            flex-wrap: wrap;
+            .copyright {
+                width: 100%;
+            }
+            .policies {
+                align-self: start;
+                width: 50%;
+                margin: 40px 0;
+            }
+            .menu-footer {
+                width: 50%;
+                margin: 40px 0;
+            }
+            .follow {
+                width: 100%;
+            }
+            .footer-box {
+                @include flex-center;
+                flex-direction: column;
             }
         }
     }

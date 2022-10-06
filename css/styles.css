@@ -92,27 +92,45 @@ header nav .menu-icon:hover {
 
 @media screen and (max-width: 800px) {
   header nav .menu {
-    position: absolute;
-    top: 75px;
-    left: 0;
-    width: 100%;
     display: block;
+    position: absolute;
+    top: 85px;
+    right: 10px;
+    width: 40%;
+    min-width: 175px;
+    padding: 25px 0;
     background-color: #001F56;
+    border-radius: 5px;
   }
   header nav .menu li {
-    height: 50px;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    height: 35px;
+    padding: 0 30px;
+    /* &:hover::after {
+        content: '';
+        display: none;
+    }
+    &:hover, &:hover + li  {
+        border-color: $secondary-color;
+    }
+    &:hover:last-child {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        border-color: $secondary-color;
+    } */
+  }
+  header nav .menu li a {
+    width: auto;
   }
   header nav .menu li:hover::after {
     content: "";
-    display: none;
+    width: 5px;
+    height: 5px;
+    margin-left: 20px;
+    border-radius: 50%;
   }
-  header nav .menu li:hover, header nav .menu li:hover + li {
-    border-color: #FF553E;
-  }
-  header nav .menu li:hover:last-child {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    border-color: #FF553E;
+  header nav .menu li a {
+    justify-content: flex-start;
   }
   header nav .menu-off {
     display: none;
@@ -196,13 +214,20 @@ footer .footer-container .follow .social-media .redes {
   height: 24px;
   margin-right: 10px;
 }
+footer .footer-container .follow p {
+  display: none;
+}
 
 @media screen and (max-width: 800px) {
   footer .footer-container {
     flex-wrap: wrap;
+    padding: 0 30px;
   }
   footer .footer-container .copyright {
     width: 100%;
+  }
+  footer .footer-container .copyright p {
+    display: none;
   }
   footer .footer-container .policies {
     align-self: start;
@@ -212,15 +237,18 @@ footer .footer-container .follow .social-media .redes {
   footer .footer-container .menu-footer {
     width: 50%;
     margin: 40px 0;
+    padding-left: 30px;
   }
   footer .footer-container .follow {
     width: 100%;
   }
-  footer .footer-container .footer-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  footer .footer-container .follow p {
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 40px;
+  }
+  footer .footer-container .footer-box .message {
+    justify-content: flex-start;
   }
 }
 

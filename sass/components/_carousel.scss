@@ -1,0 +1,33 @@
+.hero {
+  height: 80vh;
+  width: 100%;
+  background-color: $terciary-color;
+  display: flex;
+
+  .hero__text {
+    height: 80vh;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .hero__title {
+    font-size: 4rem;
+    font-weight: 500;
+    color: $primary-color;
+    line-height: 1.2;
+
+    & span {
+      font-weight: bold;
+    }
+  }
+  .hero__paragraph {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: $gray-color;
+    margin: 2rem 0;
+    line-height: 1.2;
+  }
+}

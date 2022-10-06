@@ -1,71 +1,162 @@
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500&display=swap");
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-}
+  font-family: 'Red Hat Display', sans-serif; }
 
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
   font-weight: normal;
   font-size: 2rem;
-  line-height: 1;
-}
+  line-height: 1; }
 
 ul {
-  list-style-type: none;
-}
+  list-style-type: none; }
 
 a {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 img {
-  max-width: 100%;
-}
+  max-width: 100%; }
 
 .container {
   max-width: 120rem;
   width: 90%;
-<<<<<<< HEAD
   margin: 0 auto; }
 
-/* From uiverse.io by @alexmaracinaru */
-button {
-  cursor: pointer;
-  font-weight: 700;
-  font-family: Helvetica,"sans-serif";
-  transition: all .2s;
-  padding: 10px 20px;
-  border-radius: 100px;
-  background: #cfef00;
-  border: 1px solid transparent;
+header {
+  background-color: #001F56;
+  height: 75px;
   display: flex;
-  align-items: center;
-  font-size: 15px; }
+  justify-content: center;
+  align-items: center; }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1100px; }
+    header nav .logo > img {
+      width: 118px; }
+    header nav .menu {
+      font-size: 1.5rem;
+      display: flex; }
+      header nav .menu li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1.5rem; }
+        header nav .menu li a {
+          font-family: 'Lexend', sans-serif;
+          font-weight: 400;
+          color: white; }
+    header nav .menu-icon > img {
+      width: 30px; }
 
-button:hover {
-  background: #c4e201; }
+footer {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1100px;
+    margin: 70px;
+    font-family: 'Red Hat Display', sans-serif;
+    color: white; }
+    footer .footer-container .copyright .logo > img {
+      width: 160px; }
+    footer .footer-container .copyright p {
+      font-size: 1.5rem;
+      margin-top: 15px; }
+    footer .footer-container .policies h4 {
+      font-weight: 500;
+      margin-bottom: 25px; }
+    footer .footer-container .policies p {
+      margin-top: 12px; }
+      footer .footer-container .policies p a {
+        font-size: 1.5rem;
+        color: white; }
+    footer .footer-container .menu-footer h4 {
+      font-weight: 500;
+      margin-bottom: 25px; }
+    footer .footer-container .menu-footer p {
+      margin-top: 12px; }
+      footer .footer-container .menu-footer p a {
+        font-size: 1.5rem;
+        color: white; }
+    footer .footer-container .follow h4 {
+      font-weight: 500;
+      margin-bottom: 25px; }
+    footer .footer-container .follow .message {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 25px; }
+      footer .footer-container .follow .message input {
+        width: 230px;
+        height: 36px;
+        margin-right: 8px;
+        background-color: #d8d8d8;
+        border: none; }
+      footer .footer-container .follow .message button {
+        width: 36px;
+        height: 36px;
+        border: none;
+        background-color: #FF553E; }
+        footer .footer-container .follow .message button:hover {
+          cursor: pointer; }
+        footer .footer-container .follow .message button img {
+          width: 16px; }
+    footer .footer-container .follow .social-media .redes {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px; }
 
-button > svg {
-  width: 34px;
-  margin-left: 10px;
-  transition: transform .3s ease-in-out; }
+.hero__btn {
+  background-color: #FF553E;
+  padding: 1.5rem 5rem;
+  border-radius: 5%;
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  text-align: center;
+  display: inline-block; }
 
-button:hover svg {
-  transform: translateX(5px); }
-
-button:active {
-  transform: scale(0.95); }
+.hero {
+  height: 80vh;
+  width: 100%;
+  background-color: #F5F9FC;
+  display: flex; }
+  .hero .hero__text {
+    height: 80vh;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; }
+  .hero .hero__title {
+    font-size: 4rem;
+    font-weight: 500;
+    color: #001F56;
+    line-height: 1.2; }
+    .hero .hero__title span {
+      font-weight: bold; }
+  .hero .hero__paragraph {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #6B6B6B;
+    margin: 2rem 0;
+    line-height: 1.2; }
 
 /* From uiverse.io by @alexruix */
 .card {
@@ -126,123 +217,20 @@ svg {
 .card-button:hover {
   border: 1px solid #ffcaa6;
   background-color: #ffcaa6; }
-=======
-  margin: 0 auto;
-}
 
-header {
-  background-color: #001F56;
-  height: 75px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header nav {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  max-width: 1100px;
-}
-header nav .logo > img {
-  width: 118px;
-}
-header nav .menu {
-  font-size: 1.5rem;
-  display: flex;
-}
-header nav .menu li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 1.5rem;
-}
-header nav .menu li a {
-  font-family: "Lexend", sans-serif;
-  font-weight: 400;
-  color: white;
-}
-header nav .menu-icon > img {
-  width: 30px;
-}
-
-footer {
-  background-color: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-footer .footer-container {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  max-width: 1100px;
-  margin: 70px;
-  font-family: "Red Hat Display", sans-serif;
-  color: white;
-}
-footer .footer-container .copyright .logo > img {
-  width: 160px;
-}
-footer .footer-container .copyright p {
-  font-size: 1.5rem;
-  margin-top: 15px;
-}
-footer .footer-container .policies h4 {
-  font-weight: 500;
-  margin-bottom: 25px;
-}
-footer .footer-container .policies p {
-  margin-top: 12px;
-}
-footer .footer-container .policies p a {
-  font-size: 1.5rem;
-  color: white;
-}
-footer .footer-container .menu-footer h4 {
-  font-weight: 500;
-  margin-bottom: 25px;
-}
-footer .footer-container .menu-footer p {
-  margin-top: 12px;
-}
-footer .footer-container .menu-footer p a {
-  font-size: 1.5rem;
-  color: white;
-}
-footer .footer-container .follow h4 {
-  font-weight: 500;
-  margin-bottom: 25px;
-}
-footer .footer-container .follow .message {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 25px;
-}
-footer .footer-container .follow .message input {
-  width: 230px;
-  height: 36px;
-  margin-right: 8px;
-  background-color: rgba(216, 216, 216, 0.15);
-  border: none;
-}
-footer .footer-container .follow .message button {
-  width: 36px;
-  height: 36px;
-  border: none;
-  background-color: #FF553E;
-}
-footer .footer-container .follow .message button:hover {
-  cursor: pointer;
-}
-footer .footer-container .follow .message button img {
-  width: 16px;
-}
-footer .footer-container .follow .social-media .redes {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
-}
-
-/*# sourceMappingURL=styles.css.map */
->>>>>>> 442627703b1d127b062394039bce1ab25eb9399f
+.categories {
+  margin: 5rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  gap: 2rem; }
+  .categories .category {
+    padding: 4rem;
+    background-color: #F5F9FC;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid #001F56; }
+    .categories .category h4 {
+      margin-top: 2rem; }
+  .categories .category__img {
+    height: 5rem;
+    width: 5rem; }

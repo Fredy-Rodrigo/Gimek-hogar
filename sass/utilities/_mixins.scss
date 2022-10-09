@@ -1,5 +1,21 @@
 @mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+@mixin grid ($columns, $spacing) {
+  display: grid;
+  gap: $spacing;
+  grid-template-columns: repeat($columns, 1fr);
+}
+
+@mixin scrollHorizontal {
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+
+  > * {
+    scroll-snap-align: center;
+  }
+}
+

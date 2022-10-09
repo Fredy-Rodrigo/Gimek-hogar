@@ -3,3 +3,15 @@
     width: 90%;
     margin: 0 auto;
 }
+
+.section {
+  padding: 3rem 0;
+
+  &:first-child {
+    background-color: $terciary-color;
+  }
+
+  &:last-child {
+    padding-bottom: 15rem;
+  }
+}

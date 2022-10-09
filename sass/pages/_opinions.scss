@@ -1,0 +1,48 @@
+.opinion-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 30rem);
+  gap: 2rem;
+  padding: 2rem 0;
+  @include scrollHorizontal;
+
+  @media (min-width: 768px) {
+    @include grid(3, 2rem)
+  }
+}
+
+.opinion {
+  padding: 4rem 2rem 2rem 2rem;
+  background-color: #F5F9FC;
+  border-radius: 1rem;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    right: 0;
+    top: -4rem;
+    background-image: url(../../assets/images/bxs_quote-right.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__info {
+    color: $gray-color;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+  }
+
+  &__title {
+    font-size: 1.6rem;
+  }
+}

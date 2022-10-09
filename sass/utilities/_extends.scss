@@ -1,0 +1,35 @@
+%heading {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 2rem 0;
+  font-weight: 400;
+
+  > span {
+    font-weight: 600;
+  }
+}
+
+%btn {
+  margin-top: 2rem;
+  background-color: $secondary-color;
+  display: block;
+  padding: 1.5rem 4rem;
+  font-weight: 700;
+  text-align: center;
+  color: $white-color;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  position: relative;
+
+  &::after {
+    background-image: url(../../assets/images/arrow.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    content: '';
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    right: 1rem;
+    top: 1.8rem;
+  }
+}

@@ -1,6 +1,7 @@
 @import 'utilities/variables';
 @import 'utilities/functions';
 @import 'utilities/mixins';
+@import 'utilities/extends';
 @import 'utilities/conditionals';
 
 @import 'base/reset';
@@ -14,11 +15,15 @@
 
 @import 'components/buttons';
 @import 'components/carousel';
-@import 'components/card-ofertas';
 
 @import 'pages/home';
-@import 'pages/contact';
+@import 'pages/banner';
+@import 'pages/categories';
 @import 'pages/offers';
+@import 'pages/information';
+@import 'pages/opinions';
+@import 'pages/query';
+@import 'pages/contact';
 
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700&display=swap');
 

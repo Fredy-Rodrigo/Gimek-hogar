@@ -8,6 +8,7 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <meta name="description" content="sadasd">
   <meta name="keywords" content="asdad">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -179,29 +180,53 @@
     <!-- Opiniones -->
     <section class="offers container section">
       <h2 class="offers__title"><span>LO QUE OPINAN DE NOSOTROS</span></h2>
-      <div class="opinion-grid">
+      <div class="opinion-grid glider-contain">
+
         <!-- Opinion -->
-        <div class="opinion">
-          <p class="opinion__info">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-          <div class="opinion__content">
-            <img src="./assets/images/Ellipse 11.png" alt="imagen persona opinion">
-            <h3 class="opinion__title">Eduardo Nazareno</h3>
+        <div class="glider">
+          <div class="opinion">
+            <img src="./assets/images/comillas.png" alt="" class="comillas">
+            <p class="opinion__info">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            <div class="opinion__content">
+              <img src="./assets/images/Ellipse 11.png" alt="imagen persona opinion">
+              <h3 class="opinion__title">Eduardo Nazareno</h3>
+            </div>
+          </div>
+          <div class="opinion">
+            <img src="./assets/images/comillas.png" alt="" class="comillas">
+            <p class="opinion__info">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            <div class="opinion__content">
+              <img src="./assets/images/Ellipse 11.png" alt="imagen persona opinion">
+              <h3 class="opinion__title">Eduardo Nazareno</h3>
+            </div>
+          </div>
+          <div class="opinion">
+            <img src="./assets/images/comillas.png" alt="" class="comillas">
+            <p class="opinion__info">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            <div class="opinion__content">
+              <img src="./assets/images/Ellipse 11.png" alt="imagen persona opinion">
+              <h3 class="opinion__title">Eduardo Nazareno</h3>
+            </div>
+          </div>
+          <div class="opinion">
+            <img src="./assets/images/comillas.png" alt="" class="comillas">
+            <p class="opinion__info">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            <div class="opinion__content">
+              <img src="./assets/images/Ellipse 11.png" alt="imagen persona opinion">
+              <h3 class="opinion__title">Eduardo Nazareno</h3>
+            </div>
           </div>
         </div>
-        <div class="opinion">
-          <p class="opinion__info">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-          <div class="opinion__content">
-            <img src="./assets/images/Ellipse 11.png" alt="imagen persona opinion">
-            <h3 class="opinion__title">Eduardo Nazareno</h3>
-          </div>
+        <div class="glider-buttons">
+          <button aria-label="Previous" class="glider-prev btn-glider">
+            <img src="./assets/icons/arrow-left.svg" alt="">
+          </button>
+          <button aria-label="Next" class="glider-next btn-glider">
+            <img src="./assets/icons/arrow-right.svg" alt="">
+          </button>
         </div>
-        <div class="opinion">
-          <p class="opinion__info">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-          <div class="opinion__content">
-            <img src="./assets/images/Ellipse 11.png" alt="imagen persona opinion">
-            <h3 class="opinion__title">Eduardo Nazareno</h3>
-          </div>
-        </div>
+        <div role="tablist" class="dots"></div>
+
       </div>
     </section>
 
@@ -254,6 +279,7 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
   <script src="./scripts/main.js"></script>
 </body>
 </html>

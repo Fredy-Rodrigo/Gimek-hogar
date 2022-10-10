@@ -1,4 +1,4 @@
-.opinion-grid {
+/* .opinion-grid {
   display: grid;
   grid-template-columns: repeat(4, 30rem);
   gap: 2rem;
@@ -44,5 +44,69 @@
 
   &__title {
     font-size: 1.6rem;
+  }
+} */
+
+.glider-contain {
+  position: relative;
+  margin: 40px 0;
+  .glider {
+    .opinion {
+      position: relative;
+      width: 313px;
+      margin: 20px;
+      padding: 50px 30px 30px 30px;
+      border-radius: 8px;
+      background-color: $terciary-color;
+      .comillas {
+        position: absolute;
+        top: -25px;
+        right: 10px;
+      }
+      .opinion__info {
+        font-size: 1.6rem;
+      }
+      .opinion__content {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        img {
+          margin-right: 10px;
+        }
+        .opinion__title {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+  .glider-buttons {
+    position: absolute;
+    top: -85px;
+    left: 85%;
+    width: 90px;
+    height: 28px;
+    .btn-glider {
+      width: 60px;
+      height: 28px;
+      @include flex-center;
+      background-color: $primary-color;
+      img {
+        width: 18px;
+      }
+    }
+  }
+  .dots {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .glider-contain {
+    .glider-buttons {
+      top: 260px;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
   }
 }

@@ -23,12 +23,13 @@
 
   &__title {
     line-height: 1.2;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-top: 5rem;
     font-weight: 500;
 
     @media (min-width: 768px) {
       margin-top: 0rem;
+      font-size: 4rem;
     }
 
     &--bold {
@@ -55,7 +56,8 @@
   }
 
   &__img {
-    width: 30rem;
+    width: 40rem;
+    object-fit: cover;
     @media (min-width: 768px) {
       width: 100%;
     }

@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500&display=swap");
 .categories__heading, .offers__title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   margin: 2rem 0;
   font-weight: 400; }
   .categories__heading > span, .offers__title > span {
     font-weight: 600; }
+  @media (min-width: 768px) {
+    .categories__heading, .offers__title {
+      font-size: 3rem; } }
 
 .banner__btn, .query__btn {
   margin-top: 2rem;
@@ -59,7 +62,8 @@ img {
 .section {
   padding: 3rem 0; }
   .section:first-child {
-    background-color: #F5F9FC; }
+    background-color: #F5F9FC;
+    padding: 0; }
   .section:last-child {
     padding-bottom: 15rem; }
 
@@ -258,12 +262,13 @@ footer {
 
 .banner__title {
   line-height: 1.2;
-  font-size: 4rem;
+  font-size: 3rem;
   margin-top: 5rem;
   font-weight: 500; }
   @media (min-width: 768px) {
     .banner__title {
-      margin-top: 0rem; } }
+      margin-top: 0rem;
+      font-size: 4rem; } }
   .banner__title--bold {
     font-weight: 700; }
 
@@ -280,7 +285,8 @@ footer {
   justify-content: center; }
 
 .banner__img {
-  width: 30rem; }
+  width: 40rem;
+  object-fit: cover; }
   @media (min-width: 768px) {
     .banner__img {
       width: 100%; } }
@@ -378,6 +384,21 @@ footer {
     flex-direction: column;
     justify-content: center;
     gap: 1.5rem; }
+  .info-0 {
+    position: relative; }
+    .info-0 p {
+      position: absolute;
+      width: 50%;
+      text-align: center;
+      font-weight: 700;
+      font-size: 2rem;
+      bottom: 5rem;
+      color: #FFFFFF;
+      text-shadow: 4px -1px 24px rgba(0, 0, 0, 0.82); }
+      @media (min-width: 768px) {
+        .info-0 p {
+          font-size: 2.5rem;
+          width: 60%; } }
   .info-1 {
     background-color: rgba(255, 84, 62, 0.1); }
   .info-2 {
@@ -426,7 +447,7 @@ footer {
     height: 10rem;
     right: 0;
     top: -4rem;
-    background-image: url(../../assets/images/bxs_quote-right.png);
+    background-image: url("../../assets/images/comillas.png");
     background-repeat: no-repeat;
     background-position: center center; }
   .opinion__info {

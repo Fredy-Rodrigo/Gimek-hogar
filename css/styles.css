@@ -376,6 +376,7 @@ footer {
   .info__content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 1.5rem; }
   .info-1 {
     background-color: rgba(255, 84, 62, 0.1); }

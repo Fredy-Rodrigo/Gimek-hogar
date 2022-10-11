@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500&display=swap");
-.query__btn, .banner__btn {
+.query__btn, .banner__btn-after, .banner__btn {
   width: 172px;
   height: 49px;
   margin-top: 3rem;
@@ -26,16 +26,16 @@
     top: 1.8rem;
   } */
 }
-.query__btn span, .banner__btn span {
+.query__btn span, .banner__btn-after span, .banner__btn span {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 5px;
 }
-.query__btn span img, .banner__btn span img {
+.query__btn span img, .banner__btn-after span img, .banner__btn span img {
   width: 1.6rem;
 }
-.query__btn:hover, .banner__btn:hover {
+.query__btn:hover, .banner__btn-after:hover, .banner__btn:hover {
   background-color: #e0402b;
 }
 
@@ -300,7 +300,13 @@ footer .footer-container .follow p {
   .banner__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr auto;
     column-gap: 6rem;
+  }
+}
+@media (max-width: 768px) {
+  .banner__grid {
+    padding-bottom: 20px;
   }
 }
 .banner__content {
@@ -309,6 +315,11 @@ footer .footer-container .follow p {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (max-width: 769px) {
+  .banner__content > .banner__btn {
+    display: none;
+  }
 }
 @media (min-width: 768px) {
   .banner__content {
@@ -351,6 +362,15 @@ footer .footer-container .follow p {
 @media (min-width: 768px) {
   .banner__img {
     width: 100%;
+  }
+}
+.banner__btn-after {
+  display: none;
+}
+@media (max-width: 769px) {
+  .banner__btn-after {
+    display: flex;
+    margin: 30px auto;
   }
 }
 

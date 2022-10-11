@@ -1,0 +1,77 @@
+.offers__title {
+  font-size: 3rem;
+  font-weight: 400;
+  span {
+      font-weight: 500;
+  }
+}
+
+.glider-offers-contain {
+  position: relative;
+  margin: 40px 0;
+  .glider-offers {
+      .offer {
+          border: 1px solid #f4f4f4;
+          margin: 0 20px;
+          padding: 30px 20px;
+          .offer__img {
+              display: block;
+              margin: 10px auto;
+          }
+          .offer__title {
+              font-size: 1.8rem;
+              font-weight: 500;
+              margin-bottom: 10px;
+          }
+          .offer__price {
+              font-family: $font-lexend;
+              font-size: 2rem;
+              font-weight: 400;
+              margin-bottom: 10px;
+          }
+          .offer__info {
+              font-size: 1.6rem;
+              font-weight: 400;
+              margin-bottom: 10px;
+          }
+          .offer__btn {
+              font-size: 1.8rem;
+              font-weight: 500;
+              margin-bottom: 10px;
+              color: $black-color;
+          }
+      }
+  }
+  .glider-offers-buttons {
+      position: absolute;
+      top: -82px;
+      left: 85%;
+      width: 90px;
+      height: 28px;
+      .btn-offer-glider {
+          width: 60px;
+          height: 28px;
+          border: none;
+          @include flex-center;
+          background-color: $primary-color;
+          img {
+              width: 21px;
+          }
+      }
+  }
+  .dots-offers {
+      display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .glider-offers-contain {
+    .glider-offers-buttons {
+      position: relative;
+      left: 0;
+      right: 0;
+      top: 20px;
+      margin: auto;
+    }
+  }
+}

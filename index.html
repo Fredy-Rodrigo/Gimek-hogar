@@ -41,7 +41,12 @@
             </h1>
             <p class="banner__paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
             </p>
-            <a class="banner__btn" href="#">Boton</a>
+            <a class="banner__btn" href="#">
+              Botón
+              <span>
+                <img src="./assets/icons/arrow-right.svg" alt="">
+              </span>
+            </a>
           </div>
           <div class="banner__img-container">
             <img class="banner__img" src="./assets/images/imagen_banner.jpg" alt="imagen de mujer con productos">
@@ -52,62 +57,85 @@
 
     <!-- Categorias -->
     <section class="categories container section">
-      <div class="categories__grid">
-        <div class="category">
-          <img class="category__img" src="./assets/images/shirt.svg" alt="imagen categoria">
-          <p class="category__title">ROPA Y ACCESORIOS</p>
+      <div class="glider-categories-contain">
+        <div class="glider-categories">
+          <div class="category">
+            <img class="category__img" src="./assets/icons/svg-ropa y accesorios.svg" alt="imagen categoria">
+            <p class="category__title">ROPA Y ACCESORIOS</p>
+          </div>
+          <div class="category">
+            <img class="category__img" src="./assets/icons/svg-electrodomesticos.svg" alt="imagen categoria">
+            <p class="category__title">ELECTRODOMESTICOS</p>
+          </div>
+          <div class="category">
+            <img class="category__img" src="./assets/icons/svg-ropa y accesorios.svg" alt="imagen categoria">
+            <p class="category__title">CATEGORIA 3</p>
+          </div>
+          <div class="category">
+            <img class="category__img" src="./assets/icons/svg-electrodomesticos.svg" alt="imagen categoria">
+            <p class="category__title">CATEGORIA 4</p>
+          </div>
+          <div class="category">
+            <img class="category__img" src="./assets/icons/svg-ropa y accesorios.svg" alt="imagen categoria">
+            <p class="category__title">CATEGORIA 5</p>
+          </div>
         </div>
-        <div class="category">
-          <img class="category__img" src="./assets/images/shirt.svg" alt="imagen categoria">
-          <p class="category__title">ELECTRODOMESTICOS</p>
+        <div class="glider-categories-buttons">
+          <button aria-label="Previous" class="glider-cat-prev btn-cat-glider glider-prev">
+            <img src="./assets/icons/arrow-left.svg" alt="">
+          </button>
+          <button aria-label="Next" class="glider-cat-next btn-cat-glider glider-next">
+            <img src="./assets/icons/arrow-right.svg" alt="">
+          </button>
         </div>
-        <div class="category">
-          <img class="category__img" src="./assets/images/shirt.svg" alt="imagen categoria">
-          <p class="category__title">CATEGORIA 3</p>
-        </div>
-        <div class="category">
-          <img class="category__img" src="./assets/images/shirt.svg" alt="imagen categoria">
-          <p class="category__title">CATEGORIA 4</p>
-        </div>
+        <div role="tablist" class="dots-categories"></div>
       </div>
     </section>
 
     <!-- Ofertas -->
     <section class="offers container section">
-      <h2 class="offers__title">Ofertas <span>imbatibles</span></h2>
-      <div class="offers__grid">
+      <h2 class="offers__title">OFERTAS <span>IMBATIBLES</span></h2>
+      <div class="glider-offers-contain">
         <!-- Producto -->
-        <div class="offer">
-          <img class="offer__img" src="./assets/images/Rectangle 39.png" alt="Imagen producto">
-          <h3 class="offer__title">Proyector Maverick PR-2-mini</h3>
-          <p class="offer__price">$69.000</p>
-          <p class="offer__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis.</p>
-          <a class="offer__btn" href="">Comprar ></a>
+        <div class="glider-offers">
+          <div class="offer">
+            <img class="offer__img" src="./assets/images/Rectangle 39.png" alt="Imagen producto">
+            <h3 class="offer__title">Proyector Maverick PR-2-mini</h3>
+            <p class="offer__price">$69.000</p>
+            <p class="offer__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis.</p>
+            <a class="offer__btn" href="">Comprar ></a>
+          </div>
+          <div class="offer">
+            <img class="offer__img" src="./assets/images/Rectangle 39.png" alt="Imagen producto">
+            <h3 class="offer__title">Proyector Maverick PR-2-mini</h3>
+            <p class="offer__price">$69.000</p>
+            <p class="offer__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis.</p>
+            <a class="offer__btn" href="">Comprar ></a>
+          </div>
+          <div class="offer">
+            <img class="offer__img" src="./assets/images/Rectangle 39.png" alt="Imagen producto">
+            <h3 class="offer__title">Proyector Maverick PR-2-mini</h3>
+            <p class="offer__price">$69.000</p>
+            <p class="offer__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis.</p>
+            <a class="offer__btn" href="">Comprar ></a>
+          </div>
+          <div class="offer">
+            <img class="offer__img" src="./assets/images/Rectangle 39.png" alt="Imagen producto">
+            <h3 class="offer__title">Proyector Maverick PR-2-mini</h3>
+            <p class="offer__price">$69.000</p>
+            <p class="offer__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis.</p>
+            <a class="offer__btn" href="">Comprar ></a>
+          </div>
         </div>
-        <!-- Producto -->
-        <div class="offer">
-          <img class="offer__img" src="./assets/images/Rectangle 39.png" alt="Imagen producto">
-          <h3 class="offer__title">Proyector Maverick PR-2-mini</h3>
-          <p class="offer__price">$69.000</p>
-          <p class="offer__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis.</p>
-          <a class="offer__btn" href="">Comprar ></a>
+        <div class="glider-offers-buttons">
+          <button aria-label="Previous" class="glider-offer-prev btn-offer-glider glider-prev">
+            <img src="./assets/icons/arrow-left.svg" alt="">
+          </button>
+          <button aria-label="Next" class="glider-offer-next btn-offer-glider glider-next">
+            <img src="./assets/icons/arrow-right.svg" alt="">
+          </button>
         </div>
-        <!-- Producto -->
-        <div class="offer">
-          <img class="offer__img" src="./assets/images/Rectangle 39.png" alt="Imagen producto">
-          <h3 class="offer__title">Proyector Maverick PR-2-mini</h3>
-          <p class="offer__price">$69.000</p>
-          <p class="offer__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis.</p>
-          <a class="offer__btn" href="">Comprar ></a>
-        </div>
-        <!-- Producto -->
-        <div class="offer">
-          <img class="offer__img" src="./assets/images/Rectangle 39.png" alt="Imagen producto">
-          <h3 class="offer__title">Proyector Maverick PR-2-mini</h3>
-          <p class="offer__price">$69.000</p>
-          <p class="offer__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis.</p>
-          <a class="offer__btn" href="">Comprar ></a>
-        </div>
+        <div role="tablist" class="dots-offers"></div>
       </div>
     </section>
 
@@ -243,7 +271,12 @@
       <div class="query">
         <h3 class="query__title">¿Tienes alguna consulta o quieres comunicarte con soporte?</h3>
         <p class="query__paragraph">Is simply dummy text of the printing and typesetting industry.</p>
-        <a class="query__btn" href="#">Boton</a>
+        <a class="query__btn" href="#">
+          Botón
+          <span>
+            <img src="./assets/icons/arrow-right.svg" alt="">
+          </span>
+        </a>
       </div>
     </section>
 

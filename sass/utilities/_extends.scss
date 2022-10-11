@@ -14,18 +14,31 @@
 }
 
 %btn {
-  margin-top: 2rem;
+  width: 172px;
+  height: 49px;
+  margin-top: 3rem;
   background-color: $secondary-color;
-  display: block;
-  padding: 1.5rem 4rem;
-  font-weight: 700;
-  text-align: center;
-  color: $white-color;
+  @include flex-center;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 500;
   font-size: 1.6rem;
+  color: $white-color;
   border-radius: 0.5rem;
   position: relative;
 
-  &::after {
+  span {
+    @include flex-center;
+    margin-left: 5px;
+    img {
+      width: 1.6rem;
+    }
+  }
+
+  &:hover {
+    background-color: $secondary-color-hover;
+  } 
+
+  /* &::after {
     background-image: url(../../assets/images/arrow.svg);
     background-repeat: no-repeat;
     position: absolute;
@@ -35,5 +48,5 @@
     height: 2.5rem;
     right: 1rem;
     top: 1.8rem;
-  }
+  } */
 }

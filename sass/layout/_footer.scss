@@ -23,6 +23,7 @@ footer {
         .policies {
             h4 {
                 font-weight: 500;
+                font-size: 2rem;
                 margin-bottom: 25px;
             }
             p {
@@ -36,6 +37,7 @@ footer {
         .menu-footer {
             h4 {
                 font-weight: 500;
+                font-size: 2rem;
                 margin-bottom: 25px;
             }
             p {
@@ -49,6 +51,7 @@ footer {
         .follow {
             h4 {
                 font-weight: 500;
+                font-size: 2rem;
                 margin-bottom: 25px;
             }
             .message {
@@ -79,6 +82,10 @@ footer {
                     width: 24px;
                     height: 24px;
                     margin-right: 10px;
+                    transition: all 0.1s;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
                 }
             }
             p {

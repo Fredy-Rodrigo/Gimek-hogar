@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500&display=swap");
-.offers__title, .categories__heading {
+.categories__heading {
   font-size: 2.5rem;
   text-transform: uppercase;
   margin: 2rem 0;
   font-weight: 400;
 }
-.offers__title > span, .categories__heading > span {
+.categories__heading > span {
   font-weight: 600;
 }
 @media (min-width: 768px) {
-  .offers__title, .categories__heading {
+  .categories__heading {
     font-size: 3rem;
   }
 }
@@ -400,58 +400,6 @@ footer .footer-container .follow p {
   text-transform: uppercase;
 }
 
-.offers__grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(4, 30rem);
-  padding: 1rem 0;
-  overflow-y: hidden;
-  scroll-snap-type: x mandatory;
-}
-.offers__grid > * {
-  scroll-snap-align: center;
-}
-@media (min-width: 768px) {
-  .offers__grid {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 1024px) {
-  .offers__grid {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.offer {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #F4F4F4;
-  padding: 1rem;
-  border-radius: 1rem;
-}
-.offer__title {
-  font-size: 1.8rem;
-  font-weight: 500;
-}
-.offer__price {
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 0.5rem 0;
-}
-.offer__info {
-  font-size: 1.6rem;
-  margin: 0.5rem 0;
-}
-.offer__btn {
-  font-size: 1.8rem;
-  color: #000;
-  font-weight: 700;
-}
-
 .information__grid {
   display: grid;
   gap: 2rem;
@@ -524,54 +472,86 @@ footer .footer-container .follow p {
   }
 }
 
-/* .opinion-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 30rem);
-  gap: 2rem;
-  padding: 2rem 0;
-  @include scrollHorizontal;
-
-  @media (min-width: 768px) {
-    @include grid(3, 2rem)
-  }
+.products-title {
+  font-size: 3rem;
+  font-weight: 400;
+}
+.products-title span {
+  font-weight: 500;
 }
 
-.opinion {
-  padding: 4rem 2rem 2rem 2rem;
-  background-color: #F5F9FC;
-  border-radius: 1rem;
+.glider-products-contain {
   position: relative;
+  margin: 40px 0;
+}
+.glider-products-contain .glider-products .product {
+  border: 1px solid #f4f4f4;
+  margin: 0 20px;
+  padding: 30px 20px;
+}
+.glider-products-contain .glider-products .product .product__img {
+  display: block;
+  margin: 10px auto;
+}
+.glider-products-contain .glider-products .product .product__title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.glider-products-contain .glider-products .product .product__price {
+  font-family: "Lexend", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.glider-products-contain .glider-products .product .product__info {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.glider-products-contain .glider-products .product .product__btn {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #000;
+}
+.glider-products-contain .glider-products-buttons {
+  position: absolute;
+  top: -82px;
+  left: 85%;
+  width: 90px;
+  height: 28px;
+}
+.glider-products-contain .glider-products-buttons .btn-prod-glider {
+  width: 60px;
+  height: 28px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #001F56;
+}
+.glider-products-contain .glider-products-buttons .btn-prod-glider img {
+  width: 18px;
+}
+.glider-products-contain .dots-products {
+  display: none;
+}
 
-  &::before {
-    position: absolute;
-    content: '';
-    display: block;
-    width: 10rem;
-    height: 10rem;
+@media (max-width: 760px) {
+  .glider-products-contain .glider-products-buttons {
+    position: relative;
+    left: 0;
     right: 0;
-    top: -4rem;
-    background-image: url('../../assets/images/comillas.png');
-    background-repeat: no-repeat;
-    background-position: center center;
+    top: 20px;
+    margin: auto;
   }
+}
+.opinion-title {
+  font-size: 3rem;
+  font-weight: 500;
+}
 
-  &__info {
-    color: $gray-color;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-    font-size: 1.6rem;
-  }
-
-  &__content {
-    display: flex;
-    align-items: center;
-    column-gap: .5rem;
-  }
-
-  &__title {
-    font-size: 1.6rem;
-  }
-} */
 .glider-contain {
   position: relative;
   margin: 40px 0;
@@ -605,7 +585,7 @@ footer .footer-container .follow p {
 }
 .glider-contain .glider-buttons {
   position: absolute;
-  top: -85px;
+  top: -82px;
   left: 85%;
   width: 90px;
   height: 28px;
@@ -627,9 +607,10 @@ footer .footer-container .follow p {
 
 @media (max-width: 760px) {
   .glider-contain .glider-buttons {
-    top: 260px;
+    position: relative;
     left: 0;
     right: 0;
+    top: 20px;
     margin: auto;
   }
 }

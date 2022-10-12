@@ -1,0 +1,17 @@
+.whatsapp {
+    position: fixed;
+    bottom: 5vh;
+    right: 40px;
+    display: flex;
+    justify-content: flex-end;
+    .wsp-container {
+        width: 77px;
+        height: 77px;
+        border-radius: 50%;
+        background-color: $secondary-color;
+        @include flex-center;
+        .wsp-logo {
+            width: 35px;
+        }
+    }
+}

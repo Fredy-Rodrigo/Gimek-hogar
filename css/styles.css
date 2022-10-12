@@ -721,5 +721,24 @@ footer .footer-container .follow p {
   font-size: 1.6rem;
   font-weight: 500;
 }
+.whatsapp {
+  position: fixed;
+  bottom: 5vh;
+  right: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+.whatsapp .wsp-container {
+  width: 77px;
+  height: 77px;
+  border-radius: 50%;
+  background-color: #FF553E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.whatsapp .wsp-container .wsp-logo {
+  width: 35px;
+}
 
 /*# sourceMappingURL=styles.css.map */

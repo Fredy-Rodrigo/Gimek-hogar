@@ -727,6 +727,7 @@ footer .footer-container .follow p {
   right: 40px;
   display: flex;
   justify-content: flex-end;
+  z-index: 10;
 }
 .whatsapp .wsp-container {
   width: 77px;
@@ -739,6 +740,19 @@ footer .footer-container .follow p {
 }
 .whatsapp .wsp-container .wsp-logo {
   width: 35px;
+}
+
+@media (max-width: 768px) {
+  .whatsapp {
+    bottom: 2vh;
+    right: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .whatsapp {
+    bottom: 1vh;
+    right: 10px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

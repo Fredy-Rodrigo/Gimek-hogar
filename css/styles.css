@@ -339,10 +339,13 @@ footer {
   display: none; }
 
 .offers__title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 400; }
   .offers__title span {
     font-weight: 500; }
+  @media (min-width: 768px) {
+    .offers__title {
+      font-size: 3rem; } }
 
 .glider-offers-contain {
   position: relative;

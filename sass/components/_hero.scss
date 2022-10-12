@@ -1,0 +1,14 @@
+.hero {
+  background-color: $terciary-color;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    font-size: 4rem;
+    text-align: center;
+    color: $primary-color;
+    font-weight: 500;
+  }
+}

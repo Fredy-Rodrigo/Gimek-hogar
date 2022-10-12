@@ -296,6 +296,20 @@ footer .footer-container .follow p {
     justify-content: flex-start;
   }
 }
+.hero {
+  background-color: #F5F9FC;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero__title {
+  font-size: 4rem;
+  text-align: center;
+  color: #001F56;
+  font-weight: 500;
+}
+
 @media (min-width: 768px) {
   .banner__grid {
     display: grid;
@@ -400,11 +414,16 @@ footer .footer-container .follow p {
 }
 
 .offers__title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 400;
 }
 .offers__title span {
   font-weight: 500;
+}
+@media (min-width: 768px) {
+  .offers__title {
+    font-size: 3rem;
+  }
 }
 
 .glider-offers-contain {

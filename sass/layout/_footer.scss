@@ -55,25 +55,30 @@ footer {
                 margin-bottom: 25px;
             }
             .message {
-                @include flex-center;
                 margin-bottom: 25px;
-                input {
-                    width: 230px;
-                    height: 36px;
-                    margin-right: 8px;
-                    background-color: rgba(216, 216, 216, 15%);
-                    border: none;
-                }
-                button {
-                    width: 36px;
-                    height: 36px;
-                    border: none;
-                    background-color: $secondary-color;
-                    &:hover {
-                        cursor: pointer;
+                form {
+                    @include flex-center;
+                    input {
+                        width: 230px;
+                        height: 36px;
+                        margin-right: 8px;
+                        background-color: rgba(216, 216, 216, 15%);
+                        border: none;
+                        font-size: 1.8rem;
+                        font-family: 'Red Hat Display', sans-serif;
+                        color: white;
                     }
-                    img {
-                        width: 16px;
+                    button {
+                        width: 36px;
+                        height: 36px;
+                        border: none;
+                        background-color: $secondary-color;
+                        &:hover {
+                            cursor: pointer;
+                        }
+                        img {
+                            width: 16px;
+                        }
                     }
                 }
             }

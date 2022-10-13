@@ -18,6 +18,9 @@
           margin: 0 20px;
           padding: 30px 20px;
           .offer__img {
+              width: 160px;
+              height: 160px;
+              object-fit: contain;
               display: block;
               margin: 10px auto;
           }

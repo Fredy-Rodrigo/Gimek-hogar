@@ -10,6 +10,7 @@
   <meta name="keywords" content="asdad">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="icon" href="./assets/images/favicon.ico">
 </head>
 <body>
   <header class="header">
@@ -18,11 +19,10 @@
         <img src="./assets/images/LOGO GIMEK 2 1.svg" alt="">
       </div>
       <ul class="menu menu-off" id="menu">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Nosotros</a></li>
+        <li><a href="./index.html">Inicio</a></li>
         <li><a href="./views/categories.html">Categorías</a></li>
-        <li><a href="#">Ubicaciones</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="./views/ubicaciones.html">Ubicaciones</a></li>
+        <li><a href="https://wa.me/5491169620164?text=Hola!!,%20estoy%20buscando%20un%20producto..." target="_blank">Contacto</a></li>
       </ul>
       <div class="menu-icon" id="menu-icon">
         <img src="./assets/icons/menu-icon.svg" alt="">
@@ -39,9 +39,9 @@
             <h1 class="banner__title">Aceptamos TODAS las Tarjetas,
               <span class="banner__title--bold"> hasta 24 cuotas.</span>
             </h1>
-            <p class="banner__paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            <p class="banner__paragraph">Obtén descuentos de hasta un 10% si pagas en efectivo. Contamos con varios puntos de recojo para que tengas tus productos en el menor tiempo posible.
             </p>
-            <a class="banner__btn" href="#">
+            <a class="banner__btn" href="./views/categories.html">
               Botón
               <span>
                 <img src="./assets/icons/arrow-right.svg" alt="">
@@ -51,7 +51,7 @@
           <div class="banner__img-container">
             <img class="banner__img" src="./assets/images/imagen_banner.jpg" alt="imagen de mujer con productos">
           </div>
-          <a class="banner__btn-after" href="#">
+          <a class="banner__btn-after" href="./views/categories.html">
             Botón
             <span>
               <img src="./assets/icons/arrow-right.svg" alt="">
@@ -62,29 +62,45 @@
     </section>
 
     <!-- Categorias -->
-    <section class="categories container section">
+    <section class="categories">
       <div class="glider-categories-contain">
         <div class="glider-categories">
-          <div class="category">
-            <img class="category__img" src="./assets/icons/svg-ropa y accesorios.svg" alt="imagen categoria">
-            <p class="category__title">ROPA Y ACCESORIOS</p>
-          </div>
-          <div class="category">
-            <img class="category__img" src="./assets/icons/svg-electrodomesticos.svg" alt="imagen categoria">
-            <p class="category__title">ELECTRODOMESTICOS</p>
-          </div>
-          <div class="category">
-            <img class="category__img" src="./assets/icons/svg-ropa y accesorios.svg" alt="imagen categoria">
-            <p class="category__title">CATEGORIA 3</p>
-          </div>
-          <div class="category">
-            <img class="category__img" src="./assets/icons/svg-electrodomesticos.svg" alt="imagen categoria">
-            <p class="category__title">CATEGORIA 4</p>
-          </div>
-          <div class="category">
-            <img class="category__img" src="./assets/icons/svg-ropa y accesorios.svg" alt="imagen categoria">
-            <p class="category__title">CATEGORIA 5</p>
-          </div>
+          <a href="./views/categories.html">
+            <div class="category">
+              <img class="category__img" src="./assets/icons/electrodomesticos.svg" alt="imagen categoria">
+              <p class="category__title">ELECTRODOMESTICOS</p>
+            </div>
+          </a>
+          <a href="./views/categories.html">
+            <div class="category">
+              <img class="category__img" src="./assets/icons/audio-electronica.svg" alt="imagen categoria">
+              <p class="category__title">AUDIO Y ELECTRÓNICA</p>
+            </div>
+          </a>
+          <a href="./views/categories.html">
+            <div class="category">
+              <img class="category__img" src="./assets/icons/calzado.svg" alt="imagen categoria">
+              <p class="category__title">CALZADO</p>
+            </div>
+          </a>
+          <a href="./views/categories.html">
+            <div class="category">
+              <img class="category__img" src="./assets/icons/blanqueria.svg" alt="imagen categoria">
+              <p class="category__title">BLANQUERÍA</p>
+            </div>
+          </a>
+          <a href="./views/categories.html">
+            <div class="category">
+              <img class="category__img" src="./assets/icons/cuidado-personal.svg" alt="imagen categoria">
+              <p class="category__title">ELECTROHOGAR</p>
+            </div>
+          </a>
+          <a href="./views/categories.html">
+            <div class="category">
+              <img class="category__img" src="./assets/icons/electrohogar.svg" alt="imagen categoria">
+              <p class="category__title">CUIDADO PERSONAL</p>
+            </div>
+          </a>
         </div>
         <div class="glider-categories-buttons">
           <button aria-label="Previous" class="glider-cat-prev btn-cat-glider glider-prev">
@@ -107,30 +123,26 @@
           <div class="offer">
             <img class="offer__img" src="./assets/images/Rectangle 39.png" alt="Imagen producto">
             <h3 class="offer__title">Proyector Maverick PR-2-mini</h3>
-            <p class="offer__price">$69.000</p>
-            <p class="offer__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis.</p>
-            <a class="offer__btn" href="">Comprar ></a>
+            <p class="offer__price">$43,637.00</p>
+            <a class="offer__btn" href="https://wa.me/5491169620164?text=Hola!,%20quiero%20comprar:%20Proyector%20Maverick%20PR-2-mini" target="_blank">Comprar ></a>
+          </div>
+          <div class="offer">
+            <img class="offer__img" src="./assets/images/ofertas-termo.png" alt="Imagen producto">
+            <h3 class="offer__title">Kit Tetmo y mate Acero inoxidable</h3>
+            <p class="offer__price">$14,733.00</p>
+            <a class="offer__btn" href="https://wa.me/5491169620164?text=Hola!,%20quiero%20comprar:%20Kit%20Tetmo%20y%20mate%20Acero%20inoxidable" target="_blank">Comprar ></a>
+          </div>
+          <div class="offer">
+            <img class="offer__img" src="./assets/images/ofertas-plancha.png" alt="Imagen producto">
+            <h3 class="offer__title">Plancha pelo remington S12A</h3>
+            <p class="offer__price">$8,279.10</p>
+            <a class="offer__btn" href="https://wa.me/5491169620164?text=Hola!,%20quiero%20comprar:%20Plancha%20pelo%20remington%20S12A" target="_blank">Comprar ></a>
           </div>
           <div class="offer">
             <img class="offer__img" src="./assets/images/Rectangle 39.png" alt="Imagen producto">
             <h3 class="offer__title">Proyector Maverick PR-2-mini</h3>
-            <p class="offer__price">$69.000</p>
-            <p class="offer__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis.</p>
-            <a class="offer__btn" href="">Comprar ></a>
-          </div>
-          <div class="offer">
-            <img class="offer__img" src="./assets/images/Rectangle 39.png" alt="Imagen producto">
-            <h3 class="offer__title">Proyector Maverick PR-2-mini</h3>
-            <p class="offer__price">$69.000</p>
-            <p class="offer__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis.</p>
-            <a class="offer__btn" href="">Comprar ></a>
-          </div>
-          <div class="offer">
-            <img class="offer__img" src="./assets/images/Rectangle 39.png" alt="Imagen producto">
-            <h3 class="offer__title">Proyector Maverick PR-2-mini</h3>
-            <p class="offer__price">$69.000</p>
-            <p class="offer__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis.</p>
-            <a class="offer__btn" href="">Comprar ></a>
+            <p class="offer__price">$43,637.00</p>
+            <a class="offer__btn" href="https://wa.me/5491169620164?text=Hola!,%20quiero%20comprar:%20Proyector%20Maverick%20PR-2-mini" target="_blank">Comprar ></a>
           </div>
         </div>
         <div class="glider-offers-buttons">
@@ -179,32 +191,28 @@
         <!-- Producto -->
         <div class="glider-products">
           <div class="product">
-            <img class="product__img" src="./assets/images/Rectangle 39.png" alt="Imagen producto">
+            <img class="product__img" src="./assets/images/prod-balanza.png" alt="Imagen producto">
             <h3 class="product__title">Balanza digital Zenith</h3>
             <p class="product__price">$69.000</p>
-            <p class="product__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis.</p>
-            <a class="product__btn" href="">Comprar ></a>
+            <a class="product__btn" href="https://wa.me/5491169620164?text=Hola!,%20quiero%20comprar:%20Balanza%20digital%20Zenith" target="_blank">Comprar ></a>
           </div>
           <div class="product">
-            <img class="product__img" src="./assets/images/Rectangle 39.png" alt="Imagen producto">
-            <h3 class="product__title">Proyector Maverick PR-2-mini</h3>
-            <p class="product__price">$69.000</p>
-            <p class="product__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis.</p>
-            <a class="product__btn" href="">Comprar ></a>
+            <img class="product__img" src="./assets/images/prod-lavarropas.png" alt="Imagen producto">
+            <h3 class="product__title">Lavarropas Drean 6.06</h3>
+            <p class="product__price">$89,999.10</p>
+            <a class="product__btn" href="https://wa.me/5491169620164?text=Hola!,%20quiero%20comprar:%20Lavarropas%20Drean%206.06" target="_blank">Comprar ></a>
           </div>
           <div class="product">
-            <img class="product__img" src="./assets/images/Rectangle 39.png" alt="Imagen producto">
-            <h3 class="product__title">Proyector Maverick PR-2-mini</h3>
+            <img class="product__img" src="./assets/images/prod-hervidor.png" alt="Imagen producto">
+            <h3 class="product__title">Hervidor Black y Decker KE21441</h3>
             <p class="product__price">$69.000</p>
-            <p class="product__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis.</p>
-            <a class="product__btn" href="">Comprar ></a>
+            <a class="product__btn" href="https://wa.me/5491169620164?text=Hola!,%20quiero%20comprar:%20Hervidor%20Black%20y%20Decker%20KE21441" target="_blank">Comprar ></a>
           </div>
           <div class="product">
-            <img class="product__img" src="./assets/images/Rectangle 39.png" alt="Imagen producto">
-            <h3 class="product__title">Proyector Maverick PR-2-mini</h3>
+            <img class="product__img" src="./assets/images/prod-balanza.png" alt="Imagen producto">
+            <h3 class="product__title">Balanza digital Zenith</h3>
             <p class="product__price">$69.000</p>
-            <p class="product__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis.</p>
-            <a class="product__btn" href="">Comprar ></a>
+            <a class="product__btn" href="https://wa.me/5491169620164?text=Hola!,%20quiero%20comprar:%20Balanza%20digital%20Zenith" target="_blank">Comprar ></a>
           </div>
         </div>
         <div class="glider-products-buttons">
@@ -228,33 +236,33 @@
         <div class="glider">
           <div class="opinion">
             <img src="./assets/icons/comillas.svg" alt="" class="comillas">
-            <p class="opinion__info">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            <p class="opinion__info">Le compramos hace 4 días un proyector Maverick a un muy buen precio. El producto 10 puntos.</p>
             <div class="opinion__content">
-              <img src="./assets/images/Ellipse 11.png" alt="imagen persona opinion">
+              <img src="./assets/images/avatar-1.png" alt="imagen persona opinion">
               <h3 class="opinion__title">Eduardo Nazareno</h3>
             </div>
           </div>
           <div class="opinion">
             <img src="./assets/icons/comillas.svg" alt="" class="comillas">
-            <p class="opinion__info">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            <p class="opinion__info">Muy buena atención por parte de sus vendedores y dueños, me  trasmitieron confianza  en la  compra de cuatro cocinas eléctricas</p>
             <div class="opinion__content">
-              <img src="./assets/images/Ellipse 11.png" alt="imagen persona opinion">
-              <h3 class="opinion__title">Eduardo Nazareno</h3>
+              <img src="./assets/images/avatar-2.png" alt="imagen persona opinion">
+              <h3 class="opinion__title">Mariela Maroquí</h3>
             </div>
           </div>
           <div class="opinion">
             <img src="./assets/icons/comillas.svg" alt="" class="comillas">
-            <p class="opinion__info">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            <p class="opinion__info">Excelente atención y asistencia al cliente. Dan facilidades y tiempo suficiente para reservar y pagar el producto. </p>
             <div class="opinion__content">
-              <img src="./assets/images/Ellipse 11.png" alt="imagen persona opinion">
-              <h3 class="opinion__title">Eduardo Nazareno</h3>
+              <img src="./assets/images/avatar-3.png" alt="imagen persona opinion">
+              <h3 class="opinion__title">Junior Peruzzi</h3>
             </div>
           </div>
           <div class="opinion">
             <img src="./assets/icons/comillas.svg" alt="" class="comillas">
-            <p class="opinion__info">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            <p class="opinion__info">Le compramos hace 4 días un proyector Maverick a un muy buen precio. El producto 10 puntos.</p>
             <div class="opinion__content">
-              <img src="./assets/images/Ellipse 11.png" alt="imagen persona opinion">
+              <img src="./assets/images/avatar-1.png" alt="imagen persona opinion">
               <h3 class="opinion__title">Eduardo Nazareno</h3>
             </div>
           </div>
@@ -277,7 +285,7 @@
       <div class="query">
         <h3 class="query__title">¿Tienes alguna consulta o quieres comunicarte con soporte?</h3>
         <p class="query__paragraph">Is simply dummy text of the printing and typesetting industry.</p>
-        <a class="query__btn" href="#">
+        <a class="query__btn" href="https://wa.me/5491169620164?text=Hola!!,%20tengo%20una%20consulta..." target="_blank">
           Botón
           <span>
             <img src="./assets/icons/arrow-right.svg" alt="">
@@ -310,10 +318,12 @@
       <div class="follow footer-box">
         <h4>Síguenos</h4>
         <div class="message">
-          <input type="text">
-          <button>
-            <img src="./assets/icons/arrow-right.svg" alt="">
-          </button>
+          <form action="#">
+            <input id="message" type="text">
+            <button id="submit">
+              <img src="./assets/icons/arrow-right.svg" alt="">
+            </button>
+          </form>
         </div>
         <div class="social-media">
           <a href="https://www.facebook.com/gimekhogar1/" target="_blank"><img class="redes" src="./assets/icons/facebook.svg" alt=""></a>

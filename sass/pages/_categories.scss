@@ -1,3 +1,9 @@
+.categories {
+  width: 100%;
+  padding: 0 0 0 5%;
+  margin: 50px 0;
+}
+
 .glider-categories-contain {
   .glider-categories {
     .category {
@@ -18,6 +24,7 @@
       &__title {
         font-size: 1.6rem;
         text-transform: uppercase;
+        color: $black-color;
       }
     }
   }

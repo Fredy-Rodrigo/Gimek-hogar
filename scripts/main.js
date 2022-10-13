@@ -7,6 +7,17 @@ menuIcon.addEventListener('click', () => {
     menu.classList.toggle('menu-off');
 })
 
+/* FOOTER ENVIAR MENSAJE POR WSP */
+
+let message = document.getElementById('message');
+let submit = document.getElementById('submit');
+
+submit.addEventListener('click', () => {
+    let wspMessage = message.value.split(' ').join('%20');
+    let url = `https://wa.me/5491169620164?text=${wspMessage}`;
+    window.open(url);
+})
+
 /* SLIDER OPINIONES */
 
 window.addEventListener('load', function(){
@@ -132,18 +143,15 @@ window.addEventListener('load', function(){
 		},
         responsive: [
             {
-                // screens greater than >= 775px
                 breakpoint: 0,
                 settings: {
-                // Set to `auto` and provide item width to adjust to viewport
                 slidesToShow: 1.5,
                 slidesToScroll: 1,
                 itemWidth: 150,
                 duration: 0.25
                 }
             },{
-                // screens greater than >= 1024px
-                breakpoint: 730,
+                breakpoint: 600,
                 settings: {
                 slidesToShow: 2.5,
                 slidesToScroll: 1,
@@ -152,10 +160,18 @@ window.addEventListener('load', function(){
                 }
             }
             ,{
-                // screens greater than >= 1024px
-                breakpoint: 1024,
+                breakpoint: 900,
                 settings: {
                 slidesToShow: 3.5,
+                slidesToScroll: 1,
+                itemWidth: 150,
+                duration: 0.25
+                }
+            }
+            ,{
+                breakpoint: 1090,
+                settings: {
+                slidesToShow: 4.5,
                 slidesToScroll: 1,
                 itemWidth: 150,
                 duration: 0.25

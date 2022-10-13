@@ -40,6 +40,7 @@ header {
             }
         }
         .menu-icon {
+            display: none;
             >img {
                 width: 30px;
             }
@@ -87,6 +88,9 @@ header {
             }
             .menu-off {
                 display: none;
+            }
+            .menu-icon {
+                display: block;
             }
         }
     }

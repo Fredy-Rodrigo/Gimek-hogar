@@ -132,6 +132,9 @@ header nav .menu li:hover::after {
   border-radius: 50%;
   background-color: #FF553E;
 }
+header nav .menu-icon {
+  display: none;
+}
 header nav .menu-icon > img {
   width: 30px;
 }
@@ -172,6 +175,9 @@ header nav .menu-icon:hover {
   }
   header nav .menu-off {
     display: none;
+  }
+  header nav .menu-icon {
+    display: block;
   }
 }
 footer {
@@ -226,28 +232,33 @@ footer .footer-container .follow h4 {
   margin-bottom: 25px;
 }
 footer .footer-container .follow .message {
+  margin-bottom: 25px;
+}
+footer .footer-container .follow .message form {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 25px;
 }
-footer .footer-container .follow .message input {
+footer .footer-container .follow .message form input {
   width: 230px;
   height: 36px;
   margin-right: 8px;
   background-color: rgba(216, 216, 216, 0.15);
   border: none;
+  font-size: 1.8rem;
+  font-family: "Red Hat Display", sans-serif;
+  color: white;
 }
-footer .footer-container .follow .message button {
+footer .footer-container .follow .message form button {
   width: 36px;
   height: 36px;
   border: none;
   background-color: #FF553E;
 }
-footer .footer-container .follow .message button:hover {
+footer .footer-container .follow .message form button:hover {
   cursor: pointer;
 }
-footer .footer-container .follow .message button img {
+footer .footer-container .follow .message form button img {
   width: 16px;
 }
 footer .footer-container .follow .social-media .redes {
@@ -388,6 +399,12 @@ footer .footer-container .follow p {
   }
 }
 
+.categories {
+  width: 100%;
+  padding: 0 0 0 5%;
+  margin: 50px 0;
+}
+
 .glider-categories-contain .glider-categories .category {
   margin: 0 10px;
   padding: 4rem 1rem;
@@ -405,6 +422,7 @@ footer .footer-container .follow p {
 .glider-categories-contain .glider-categories .category__title {
   font-size: 1.6rem;
   text-transform: uppercase;
+  color: #000;
 }
 .glider-categories-contain .glider-categories-buttons {
   display: none;
@@ -436,6 +454,9 @@ footer .footer-container .follow p {
   padding: 30px 20px;
 }
 .glider-offers-contain .glider-offers .offer .offer__img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
   display: block;
   margin: 10px auto;
 }
@@ -590,6 +611,9 @@ footer .footer-container .follow p {
   padding: 30px 20px;
 }
 .glider-products-contain .glider-products .product .product__img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
   display: block;
   margin: 10px auto;
 }
@@ -739,6 +763,72 @@ footer .footer-container .follow p {
 .query__paragraph {
   font-size: 1.6rem;
   font-weight: 500;
+}
+.ubicacion-title {
+  background-color: #F5F9FC;
+  height: 244px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ubicacion-title p {
+  width: 90%;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  color: #001F56;
+}
+
+.ubicacion-sections .ubicacion {
+  max-width: 1100px;
+  width: 90%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.ubicacion-sections .ubicacion .ubicacion-info {
+  width: 45%;
+}
+.ubicacion-sections .ubicacion .ubicacion-info h4 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #001F56;
+}
+.ubicacion-sections .ubicacion .ubicacion-info .infor {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.ubicacion-sections .ubicacion .ubicacion-info .infor img {
+  width: 32px;
+}
+.ubicacion-sections .ubicacion .ubicacion-info .infor p {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.ubicacion-sections .ubicacion .ubicacion-info .infor:last-child {
+  margin-top: 15px;
+}
+.ubicacion-sections .ubicacion .ubicacion-map {
+  width: 50%;
+}
+.ubicacion-sections .ubicacion .ubicacion-map iframe {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .ubicacion-sections .ubicacion {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ubicacion-sections .ubicacion .ubicacion-info {
+    width: 90%;
+  }
+  .ubicacion-sections .ubicacion .ubicacion-map {
+    width: 90%;
+    margin-top: 20px;
+  }
 }
 .whatsapp {
   position: fixed;

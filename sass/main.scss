@@ -1,15 +1,11 @@
 @import 'utilities/variables';
-@import 'utilities/functions';
 @import 'utilities/mixins';
 @import 'utilities/extends';
-@import 'utilities/conditionals';
 
 @import 'base/reset';
 @import 'base/globals';
 @import 'base/typo';
 
-@import 'layout/navigation';
-@import 'layout/grid';
 @import 'layout/header';
 @import 'layout/footer';
 
@@ -17,7 +13,6 @@
 @import 'components/carousel';
 @import 'components/hero';
 
-@import 'pages/home';
 @import 'pages/banner';
 @import 'pages/categories';
 @import 'pages/offers';
@@ -25,7 +20,7 @@
 @import 'pages/products';
 @import 'pages/opinions';
 @import 'pages/query';
-@import 'pages/contact';
+@import 'pages/pageCategories';
 @import 'pages/ubicacion';
 @import 'pages/whatsapp';
 
